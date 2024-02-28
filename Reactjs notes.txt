@@ -1,0 +1,9 @@
+Episode 2
+
+- Json file is basically configuration for a npm
+- create-react-app use webpack behind the scene
+- npm install -D parcel => what is mean by -D => there are two type of dependencies 1) dev 2) normal so its mean we install parcel with dev dependencies
+- ^2.8.0 => ^ mean caret symbol => it will automatically upgrade the minor versions like 2.8.1 2.8.2 but ~ will upgrade major version like 2.9.1, 3.0.1
+- Package-lock.json keep track of exact version of package
+- Transitive dependencies => this mean one package depend on other packages so on ......
+

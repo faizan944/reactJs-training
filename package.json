@@ -1,0 +1,25 @@
+{
+  "name": "react-tutorial",
+  "version": "1.0.0",
+  "description": "This is react training",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/faizan944/reactJs-training.git"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "Faizan Jamil",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/faizan944/reactJs-training/issues"
+  },
+  "homepage": "https://github.com/faizan944/reactJs-training#readme",
+  "devDependencies": {
+    "parcel": "^2.11.0"
+  }
+}
