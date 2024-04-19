@@ -1,9 +1,29 @@
 Episode 2
 
+- Npm manages packages but this is not node package manager
 - Json file is basically configuration for a npm
 - create-react-app use webpack behind the scene
+- In node modules every package has its own package.json and has its own transitive dependency.
+- Parcel is a bundler like webpack, vite. Parcel is make minified version
 - npm install -D parcel => what is mean by -D => there are two type of dependencies 1) dev 2) normal so its mean we install parcel with dev dependencies
 - ^2.8.0 => ^ mean caret symbol => it will automatically upgrade the minor versions like 2.8.1 2.8.2 but ~ will upgrade major version like 2.9.1, 3.0.1
 - Package-lock.json keep track of exact version of package
 - Transitive dependencies => this mean one package depend on other packages so on ......
-
+- npx executing the package but npm is installing the package so thats a difference between them
+- npx parcel index.html => parcel goes to index.html and build a development build and host it to localhost:1234
+- Cdn links are not the recommeded way because fetching resource from cdn is costly for us
+- Install react to remove cdn link => npm install react
+- Install react dom to remove cdn link => npm install react-dom
+- In normal javascript we can't import or export files
+- React is not just fast there are other bundlers which make react fast like parcel and others
+Parcel Usage
+- Dev build
+- Local Server
+- Hot module replacement(automatically refresh)
+- File watching algo
+- Caching build
+- Image optimization
+- Minification
+- Compressing
+- Differential bundling => support  older browser
+- Error handling
