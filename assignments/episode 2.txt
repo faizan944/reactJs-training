@@ -1,0 +1,40 @@
+Parcel
+Parcel is bundler which make react fast
+
+Parcel Advantages
+
+1) Zero Configuration
+
+Parcel supports many languages and file types out of the box from web technologies to assets like images, fonts videos
+
+2) dev server => mean you can ignite the app like npx parcel index.html
+3) Hot reloading
+Parcel also integrates with React Fast Refresh and the Vue Hot Reloading API to automatically preserve your application state between updates.
+4) Diagnostics
+If you make an error in your code or configuration, Parcel displays beautiful diagnostics in your terminal and in the browser.
+
+5) Reliable caching => .parcel-cache
+6) multi core
+7) Lazy dev builds
+In development, Parcel can defer building files until they are requested in the browser. 
+This means you only need to wait for the page you're actually working on to build!
+And when you do request a page, Parcel is smart enough to eagerly build all of the dependencies of that page 
+at once, without waiting for them to be requested as well – no network waterfalls!
+
+
+Difference between webpack/ Vite/ Parcel
+
+Vite
+Vite serves your code via native ES module during development, enabling extremely hot module replacement (HMR)
+For production it uses rollup to bundle your code
+Features
+- Fast Reloading
+- Out of the box support (html,typescript ....)
+- optimized prod build usinh rollup
+
+Webpack
+webpack is a module bundler that processes your application and intelligently bundles assets by creating a dependency graph
+It is highly configurable and can handle variety of tasks
+Features
+- extensive plugin support
+- Code splitting

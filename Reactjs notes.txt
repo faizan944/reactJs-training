@@ -27,3 +27,47 @@ Parcel Usage
 - Compressing
 - Differential bundling => support  older browser
 - Error handling
+
+
+Episode 3
+
+- Whenever you clone project and want to start project you just need to go to package.json and 
+check scripts
+- npm run start = npm start
+- In react we have elements which are equal to DOM elements
+- React.createElement => this will basically create the object => when we render this element on Dom then it becomes the html element
+- React.createRoot => whatever happen in dom it will happen under root
+- JSX => javascript syntax => its not a part of react => this is not html its syntax like html but not html
+- JSX converted to React.createElement => if you console both then both will return same object
+- Parcel convert JSX into javascript => transpiled by Babel => Parcel assign job to Babel
+- JSX => React.createElement => React Element object => HTML Element
+- Babel transpiled ES6 code for old browser
+- Wrap jsx in brackets if you write multiple line code
+- Extensions => prettier, Bracket pair colorization toggler, es lint, better comment
+- Everything in React is component => there are two types of components
+1) class base components 2) functional components
+- React functional components are just javascript functions which returns some jsx elements
+- Functional components is a simple javascript function which returns some jsx elements or react element (definition)
+- Component composition => component inside a component
+const a = () => {
+    return "First component"
+}
+const b = () => {
+    <a />
+    return "Second Component"
+}
+Alternative old syntax
+const c = function () {
+    return (
+        <h1> hello world </h1>
+    )
+}
+
+- In JSX if you place curly bracket in that curly bracket you can place any core javascript expression
+- If attacker add some script (cross browser origin) jsx takes care of these attacks 
+it will escape things mean sanitizes any piece of code
+
+
+
+
+
