@@ -67,7 +67,19 @@ const c = function () {
 - If attacker add some script (cross browser origin) jsx takes care of these attacks 
 it will escape things mean sanitizes any piece of code
 
+Episode 4
 
+- If we want to pass data from component to another this is called props (you can call it arguments to a function)
+- Whenever you want to pass dynamic data to component then you will use props
+- You can pass any number of props react will wrap it as object
+- Some cool developer :D destructing the props
+- Config driven UI => that your UI driven by config and these config come from backend
+Suppose if you want to different banners in Lahore and different in ISb this concept is called config driven UI
+- When you are develop large application you have to put all image in cdn
+- key in component while looping using map is reserved word
+- key => using key react will optimize its rendering cycle. these keys should have unique id 
+- Never use index as key => use index as key is anti pattern(read documentation) 
+{lists.map((list, index) => {<component key={index} />})}
 
 
 
