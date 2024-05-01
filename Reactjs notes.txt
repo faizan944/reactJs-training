@@ -82,4 +82,56 @@ Suppose if you want to different banners in Lahore and different in ISb this con
 {lists.map((list, index) => {<component key={index} />})}
 
 
+Episode 5
+
+- There are two types of import and export
+1) Default Import/export
+
+export default component
+import component from '../path';
+
+2) Named Import/export
+
+export const component;
+import {component} from '../path';
+
+- can I use together name or default together 
+Answer => yes we can it's important to note that using both named and default exports in the same file can be considered an anti-pattern.
+export const foo = 'foo';
+
+// Named export
+export const bar = 'bar';
+
+// Default export
+export default function() {
+    console.log('This is the default function');
+}
+
+import defaultFunction, { foo, bar } from './example';
+
+Using a combination of named and default exports can be appropriate in certain situations, 
+such as when you have a module that exports a primary function or class as the default export, 
+and also exports additional utility functions or constants as named exports.
+- Your component should not be more than 100 lines
+- React is fast in DOM manipulation => because Virtual DOM
+- How do update the UI => state variable 
+- To use state we will use Hooks => React hook is normal javascript utility function
+- There are two important hooks useState, useEffect
+- UseState => maintain the state of the component
+- const [listOfRes, setListOfRes] = useState() => in useState() we give default value like useState(null)
+- const [listOfRes, setListOfRes] = arr => const listOfRes = arr[0], const setListOfRes = arr[1] (this is called array destructing)
+- In useState seconf variable is use to update the variable
+- Whenever the state variable updates the react rerender the component
+React reconciliation algo(React Fiber)
+We have DOM(also called rest container) now we will filter our listing
+React create a Virtual DOM(respresentation of actual DOM) now what is Virtual DOM 
+Virtual Dom is a react object suppose if you console.log(<Body />) So basically virtual DOM is normal react object
+Diff Algo is find out the difference between the virtual updated DOM vs virtual old DOM then it will update the actual DOM
+Whenever something change in UI its calleed react reconciliation
+React is fast because it differentiate between two objects which is called virtual DOM
+Suppose when we filter out our listing it create new object and react find out the difference by comparing objects 
+and then it actually update the DOM it does not touch the html lot (Thats why react is fast)
+In interview Why react is fast
+Ans => React is doing efficient DOM manipulation because of virtual DOM(because of diff algo and reconciliation)
+
 
