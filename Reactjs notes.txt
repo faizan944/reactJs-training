@@ -135,3 +135,13 @@ In interview Why react is fast
 Ans => React is doing efficient DOM manipulation because of virtual DOM(because of diff algo and reconciliation)
 
 
+Episode 6
+
+- In useEffect hook we have two paramters 
+1) Callback function
+2) Dependency
+So how code is work => when the body function is called it render UI then useEffect will call
+If you have to do something after rendering the component you have to use useEffect
+Code wise first return call in function then useEffect
+Again first whole component even console.log out side the useEffect will render first then useEffect will trigger
+useEffect is used to implement this approach => loads -> render -> API -> render Again

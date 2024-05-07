@@ -1,10 +1,18 @@
 import RestaurantCard from "./RestaurantCard"
 import { resData } from "../utils/mockData"
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Body = () => {
     
     const [listOfRes, setListOfRes] = useState(resData);
+    useEffect(() => {
+      fetchData();
+    }, [])
+    
+    const fetchData = async () => {
+      const games = await fetch("https://api.rawg.io/api/games?key=b82cf76987cb476ea258e350bfe46592")
+      console.log(games)
+    }
     return (
       <div className="body">
         <div className="search">
